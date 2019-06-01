@@ -3,9 +3,14 @@
 .header
 	margin-bottom: 6.8125rem
 	background: url("../img/header/bg_element_.png") 70% 100% no-repeat
+	background-color: $bg-gray
+	@media(max-width: 768px)
+		background-size: cover
 	&-nav
-		height: 0
-		margin-bottom: 6.25rem
+		// height: 0
+		// margin-bottom: 6.25rem
+		@media(max-width: 768px)
+			height: 50%
 	a
 		text-decoration: none
 		&:focus
@@ -46,6 +51,8 @@
 			height: 0.0625rem
 			transform: translateY(8px) scale(1)
 			background-color: rgba($gray, 0.5)
+			@media(max-width: 768px)
+				transform: scale(0)
 	&-link
 		margin-bottom: 10.9375rem
 		a
@@ -81,4 +88,9 @@
 			img
 				width: 100%
 				height: 30rem
-				transform: translateX(-60px)
+				transform: translateX(-3.75rem)
+				@media(max-width: 768px)
+					height: 100%
+					transform: translateX(-2.5rem)
+		&_txt
+			margin-bottom: 3rem
