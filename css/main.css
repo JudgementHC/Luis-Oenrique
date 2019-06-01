@@ -20,6 +20,12 @@
   text-transform: uppercase;
 }
 
+@media (max-width: 768px) {
+  .about-txt h1 {
+    display: inline-block;
+  }
+}
+
 .about-txt p {
   height: 7.5625rem;
   margin-bottom: 3.25rem;
@@ -30,10 +36,10 @@
   line-height: 1.625rem;
 }
 
-.about-txt .btn-o {
-  width: 15.3125rem;
-  height: 1.875rem;
-  border: 1px solid #4d4d4d;
+@media (max-width: 768px) {
+  .about-txt p {
+    display: inline-block;
+  }
 }
 .delivery {
   padding-top: 3.25rem;
@@ -158,8 +164,8 @@ body {
 }
 
 .btn-m {
-  margin-right: 1.25rem;
   padding: 0.9375rem 1.875rem;
+  display: inline-block;
   background-color: #fff;
   border: 1px solid #fff;
   text-align: center;
@@ -184,6 +190,7 @@ body {
 
 .btn-o {
   padding: 0.9375rem 1.875rem;
+  display: inline-block;
   background-color: transparent;
   border: 1px solid #4d4d4d;
   text-align: center;
@@ -258,6 +265,10 @@ body {
   .header {
     background-size: cover;
   }
+}
+
+.header-nav {
+  margin-bottom: 3.0rem;
 }
 
 @media (max-width: 768px) {
