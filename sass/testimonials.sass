@@ -21,8 +21,12 @@
 		padding: 5.125rem 4.6875rem 4.375rem 7.5625rem
 		margin-bottom: 7.625rem
 		border: 1px solid $darkGray		
+		@media(max-width: 768px)
+			padding: 0
 		img
 			margin-right: 1.9375rem
+			@media(max-width: 768px)
+				margin: auto
 		h2
 			// Style for "Limara tus"
 			height: 1.375rem
@@ -52,11 +56,8 @@
 			text-transform: uppercase
 
 
-@media(max-width: 768px)
-	.testimonials
-		h1
-			font-size: 2.5em /* 40/16 */
-
 .testi_slider
 	&:focus
 		outline: none
+	@media(max-width: 768px)
+		text-align: center

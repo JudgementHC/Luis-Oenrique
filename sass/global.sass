@@ -54,6 +54,8 @@ html, body
 		height: 0.25rem
 		transform: translateY(-18px) translateX(3px) scale(1)
 		background-color: rgba($gray, 0.8)
+		@media(max-width: 768px)
+			transform: translateY(0px)
 
 .overline-center
 	&::before
@@ -63,12 +65,16 @@ html, body
 		height: 0.25rem
 		transform: translateY(-18px) translateX(191%) scale(1)
 		background-color: rgba($gray, 0.8)
+		@media(max-width: 768px)
+			transform: translateY(0px) translateX(191%)
 
 .overline-white
 	&::before
 		background-color: rgba($white, .6)
 
-/*My custom slick slider dots*/
+
+
+// My custom slick slider dots
 .slick-dots 
 	position: relative
 	li 
@@ -84,3 +90,8 @@ html, body
 			button
 				&::before
 					background-color: $black
+
+
+h1
+	@media(max-width: 768px)
+		font-size: 25px !important
